@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Password Manager</title>
+    <link rel="icon" href="https://i.ibb.co/x72YLf8/Nazrul.jpg" title="" type="" />
+    <style type="text/css" media="all">
+    body{
+      text-align: center;
+      margin: 0px;
+      background-color: #fce9ff;
+      zoom: 3;
+    }
+      img{
+        height: 80px;
+        width: 80px;
+        padding: 2.5px;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 1px 1px 20px ,
+                   -1px -1px 20px ;
+        margin-top: 0px;
+        
+      }
+      .pm{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: px;
+        width: 88%;
+        background-color: none;
+        margin-left: 5%;
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px ,
+                   -1px -1px 10px;
+        font-size: 25px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        font-family: serif;
+      }
+      .main{
+        border-radius: 10px;
+        width: 90%;
+        height: 450px;
+        background-color: none;
+        font-size: 23px;
+        box-shadow: inset 2px 5px 10px ,
+                   inset -2px -2px 10px ;
+        font-family: serif;
+        margin-left: 17px;
+        text-align: center;
+        margin-top: -15px;
+      }
+      p{
+        box-shadow: 1px 1px 10px ,
+                   -1px -1px 10px;
+        width: 75%;
+        margin-left: 38px;
+        height: ;
+        border-radius: 10px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        background-color: none;
+      }
+      p:hover{
+        color: ;
+        background-color: red;
+        
+      }
+      h6{
+        margin-bottom: -7px;
+        opacity: 0;
+      }
+      footer{
+        background-color: #1261f3;
+        font-size: 22px;
+        margin-top: 20px;
+        padding: 3px;
+        color: white;
+      }
+      iframe{
+        height: 700px;
+        width: 90%;
+      }
+      .hidden{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="" src="https://i.ibb.co/x72YLf8/Nazrul.jpg" alt="" />
+  <div class="pm">
+    Password Manager
+  </div>
+    <div class="main">
+      <h6>q</h6>
+      <p id="Nazrul">Md Nazrul Islam</p>
+      <p id="Ashik">Md Ashik Babu</p>
+      <p id="Mursalin">Md Mursalin Khan</p>
+      <p id="Sajamal">Md Sajamal Islam</p>
+      <p id="Roni">Md Roni Khan </p>
+      <p id="Akij">Md Arman Sheikh</p>
+      <p id="Mifaj">Md Mifaj Khan </p>
+    </div>
+    <footer>
+      Developed by <br />
+      Md Nazrul Islam
+    </footer>
+    <div class="hidden" id="Nazrul01">
+      <h1>Md Nazrul Islam</h1>
+      <iframe src="https://docs.google.com/spreadsheets/d/1ROadj1B2M9lauiYfPUI9GAeAoAk4RqgKRLif8TE3W7A/edit?usp=drivesdk" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Ashik01">
+      <h1>Md Ashik Babu</h1>
+      <iframe src="https://docs.google.com/spreadsheets/d/18yGTEO24e_UhUJvFnc67Ijuva0pi4GoqSlRBcazjwNg/edit?usp=drivesdk" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Mursalin01">
+      <h1>Md Mursalin Khan</h1>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Sajamal01">
+      <h1>Md Sajamal Islam</h1>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Roni01">
+      <h1>Md Roni khan</h1>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Akij01">
+      <h1>Md Arman Sheikh</h1>
+      <iframe src="https://docs.google.com/spreadsheets/d/18yGTEO24e_UhUJvFnc67Ijuva0pi4GoqSlRBcazjwNg/edit?usp=drivesdk" frameborder="0"></iframe>
+    </div>
+    <div class="hidden" id="Mifaj01">
+      <h1>Md Mifaj Khan</h1>
+      <iframe src="" frameborder="0"></iframe>
+    </div>
+    <script type="text/javascript" charset="utf-8">
+      document.getElementById("Nazrul").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul@2004") {
+                document.getElementById("Nazrul01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Ashik").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Ashik321") {
+                document.getElementById("Ashik01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Mursalin").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul") {
+                document.getElementById("Mursalin01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Sajamal").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul") {
+                document.getElementById("Sajamal01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Roni").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul") {
+                document.getElementById("Roni01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Akij").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul") {
+                document.getElementById("Akij01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        document.getElementById("Mifaj").addEventListener("click", function() {
+            var enteredPassword = prompt("Enter Your Password");
+
+            // এখানে আপনি চেক করতে পারেন যদি পাসওয়ার্ড সঠিক হয়
+            if (enteredPassword === "Nazrul") {
+                document.getElementById("Mifaj01").style.display = "block";
+            } else {
+                alert("Wrong Password!");
+            }
+        });
+        
+    </script>
+  </body>
+  </html
